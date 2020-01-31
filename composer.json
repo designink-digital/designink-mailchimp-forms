@@ -1,0 +1,12 @@
+{
+	"name": "DesignInk MailChimp Forms",
+	"description": "A plugin for creating beautiful, easy-to-use, embedded MailChimp sign-up forms for your WordPress site.",
+	"license": "GPL-3.0",
+    "require": {
+        "designink/designink-wp-framework": "1.0.1"
+	},
+	"authors": [{
+		"name": "Kyle Niemiec",
+		"email": "kyle@designinkdigital.com"
+	}]
+}

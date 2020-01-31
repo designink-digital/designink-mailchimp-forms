@@ -1,0 +1,153 @@
+/* ========================= Global Styles ========================= */
+
+.mailchimp-form-builder textarea {
+	vertical-align: top;
+}
+
+.mailchimp-form-builder #mc-shortcode-display {
+	background-color: #9DC584;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.86rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+.mailchimp-form-builder #mc-group-html textarea {
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.mailchimp-form-builder #mc-group-html .btn {
+	font-size: 1rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.mailchimp-form-builder .option-group {
+	border: gray solid 1px;
+	box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.25);
+	margin: 0 0.25rem 0.75rem 0.25rem;
+	padding: 1rem;
+}
+
+.mailchimp-form-builder .option-group .group-header {
+	margin: 0 0 0.5rem 0;
+}
+
+.mailchimp-form-builder i.order::before {
+	cursor: pointer;
+	display: block;
+	font-size: 2rem;
+	height: unset;
+	line-height: 0.7;
+	width: 2rem;
+}
+
+.mailchimp-form-builder i.order:hover::before {
+	color: goldenrod;
+}
+
+.mailchimp-form-builder i.remove::before {
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.mailchimp-form-builder i.remove:hover::before {
+	color: red;
+}
+
+.mailchimp-form-builder .column.half {
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+
+.mailchimp-form-builder .text-center {
+	text-align: center;
+}
+
+.mailchimp-form-builder .inline-block {
+	display: inline-block;
+}
+
+/* ========================= Primary Inputs ========================= */
+
+.mailchimp-form-builder #mc-primary-inputs .primary-input-container {
+	border: lightgray outset 1px;
+	margin: 0.5rem 0;
+	padding: 0.25rem 0;
+	white-space: nowrap;
+}
+
+.mailchimp-form-builder #mc-primary-inputs .primary-input-container > * {
+	margin: 0 0.25rem;
+	vertical-align: middle;
+}
+
+.mailchimp-form-builder #mc-primary-inputs .primary-input-order-controls-container {
+	padding: 0.25rem 0;
+}
+
+.mailchimp-form-builder #mc-primary-inputs .active-control-container input {
+	height: 23px;
+	margin: 0;
+	width: 23px;
+}
+
+.mailchimp-form-builder #mc-primary-inputs .active-control-container input::before {
+	color: orangered;
+	content: "\f158";
+	display: inline-block;
+	float: none;
+	font: normal 21px/1 dashicons;
+	font-size: 1.8rem;
+	margin: -3px 0 0 -4px;
+	position: relative;
+	width: unset;
+}
+
+.mailchimp-form-builder #mc-primary-inputs .active-control-container input:checked::before {
+	color: seagreen;
+	content: "\f147";
+}
+
+/* ========================= Submission Options ========================= */
+
+#mc-submission-message {
+	width: 100%;
+}
+
+/* ========================= Group Options ========================= */
+
+.mailchimp-form-builder #mc-group-options .group {
+	border-left: teal solid 0.5rem;
+	padding: 0.5rem;
+	margin: 1rem 0;
+}
+
+.mailchimp-form-builder #mc-group-options .group:nth-child(2n) {
+	border-color: orange;
+}
+
+.mailchimp-form-builder #mc-group-options .group-option {
+	border: lightgray outset 1px;
+}
+
+.mailchimp-form-builder #mc-group-options .group-option > * {
+	margin: 0 0.25rem;
+	vertical-align: middle;
+}
+
+/* ========================= Media Queries ========================= */
+
+@media (max-width: 767px) {
+
+	.mailchimp-form-builder .column.half {
+		display: block;
+		width: 100%;
+	}
+
+}

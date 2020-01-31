@@ -1,0 +1,114 @@
+/* ========================= Shared Styles ========================= */
+
+.designink-mailchimp-shortcode {
+	overflow: hidden;
+}
+
+.designink-mailchimp-shortcode form.mailchimp {
+	opacity: 1;
+	transition: 0.75s;
+}
+
+.designink-mailchimp-shortcode[submitted] form.mailchimp {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+}
+
+.designink-mailchimp-shortcode .btn {
+	margin: 0.25rem 0;
+}
+
+.designink-mailchimp-shortcode .submit-message {
+	font-size: 1.25rem;
+	position: absolute;
+	opacity: 0;
+	text-align: center;
+	transition: 0.75s;
+}
+
+.designink-mailchimp-shortcode[submitted] .submit-message {
+	opacity: 1;
+	position: relative;
+}
+
+.designink-mailchimp-shortcode form.mailchimp label {
+	font-weight: unset;
+}
+
+.designink-mailchimp-shortcode form.mailchimp .group-options {
+	margin: 0.5rem 0;
+}
+
+.designink-mailchimp-shortcode form.mailchimp .group-options .group-inputs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ========================= Horizontal Styles ========================= */
+
+.designink-mailchimp-shortcode form.mailchimp.horizontal {
+	text-align: center;
+}
+
+.designink-mailchimp-shortcode form.mailchimp.horizontal .primary-input-container {
+	display: inline-block;
+	margin: 0 0.25rem;
+}
+
+.designink-mailchimp-shortcode form.mailchimp.horizontal .group-input-container {
+	display: inline-block;
+	margin: 0 0.5rem;
+}
+
+.designink-mailchimp-shortcode form.mailchimp.horizontal .btn.vertical {
+	display: none;
+}
+
+/* ========================= Vertical Styles ========================= */
+
+.designink-mailchimp-shortcode form.mailchimp.vertical .primary-input-container {
+	max-width: 350px;
+}
+
+.designink-mailchimp-shortcode form.mailchimp.vertical .group-options .group-title {
+	margin: 0.5rem 0;
+}
+
+.designink-mailchimp-shortcode form.mailchimp.vertical .group-options .group-title {
+	margin: 0.5rem 0;
+}
+
+/* ========================= Media Queries ========================= */
+
+@media(max-width: 767px) {
+
+	.designink-mailchimp-shortcode form.mailchimp.horizontal {
+		text-align: left;
+	}
+
+	.designink-mailchimp-shortcode form.mailchimp.horizontal .primary-input-container {
+		display: block;
+		margin: 0;
+	}
+
+	.designink-mailchimp-shortcode form.mailchimp.horizontal li.group-input-container {
+		display: block;
+		margin: 0;
+	}
+
+}
+
+@media(max-width: 991px) {
+
+	.designink-mailchimp-shortcode form.mailchimp.horizontal .btn.horizontal {
+		display: none;
+	}
+
+	.designink-mailchimp-shortcode form.mailchimp.horizontal .btn.vertical {
+		display: inline-block;
+	}
+
+}
