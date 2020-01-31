@@ -24,9 +24,13 @@
 defined( 'ABSPATH' ) or exit;
 
 use Designink\WordPress\Framework\v1_0_1\Plugin;
+use Designink\WordPress\Plugin_Update_Helper\v1_0_0\Plugin_Helper_Update_List;
 
 // Include DesignInk's framework
-require __DIR__ . '/vendor/designink/designink-wp-framework/index.php';
+require_once __DIR__ . '/vendor/designink/designink-wp-framework/index.php';
+
+// Include the plugin update helper
+require_once __DIR__ . '/vendor/designink/plugin-update-helper/index.php';
 
 if ( ! class_exists( 'Designink_Mailchimp_Forms_Plugin', false ) ) {
 
@@ -39,6 +43,7 @@ if ( ! class_exists( 'Designink_Mailchimp_Forms_Plugin', false ) ) {
 		 * Plugin entry point
 		 */
 		final public static function construct() {
+			Plugin_Helper_Update_List::add_plugin( 'designink-mailchimp-forms', 'https://designinkdigital.com/' );
 			add_action( 'wp_enqueue_scripts', array( __CLASS__, '_wp_enqueue_scripts' ) );
 		}
 
